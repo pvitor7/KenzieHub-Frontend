@@ -1,0 +1,12 @@
+@media (min-width: 320px) {
+
+    .listpage-header {
+        display: flex;
+        width: calc(100% - 20px);
+        max-width: 500px;
+        justify-content: space-between;
+    }
+
+    
+
+}
