@@ -36,7 +36,15 @@ export const EditDeleteCard = ({ setVisibleEditCard, updateList, id }) => {
     <div className="modal">
       <form id="form-edit-tech" 
       onSubmit={handleSubmit(updateCard)}>
-        <h4 className="modal-editTech-title">Tecnologia Detalhes</h4>
+        <h4 className="modal-editTech-title">Tecnologia Detalhes
+             <button
+          className="btn-close-tech"
+          onClick={() => setVisibleEditCard(false)}
+        >
+          {" "}
+          x{" "}
+        </button>
+        </h4>
 
         <div className="field">
           <label>Nome do projeto</label>
