@@ -59,7 +59,7 @@ const Register = () => {
   const onSubmit = (data) => {
     axios
       .post("https://kenziehub.herokuapp.com/users", data)
-      
+      .then(() => history.push("/"))
   };
 
   return (

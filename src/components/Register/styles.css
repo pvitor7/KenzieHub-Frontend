@@ -90,13 +90,7 @@
         width: 100%;
         height: 40px;
         border: none;
-
-        /* box-sizing: border-box;
-        border-radius: 3.19812px;
-        background: #343B41;
-        padding: 0px 12.9865px;
-        width: 100%;
-        border: none; */
+        color: #F8F9FA;
     }
 
     span{
