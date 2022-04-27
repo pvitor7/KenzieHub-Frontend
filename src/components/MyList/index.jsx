@@ -24,8 +24,7 @@ const MyList = ({ }) => {
     .then((response) => {
       setList(response.data.techs);
       setUserApi(response.data.techs)
-    })
-    .catch((err) => console.log(err));
+    });
   };
 
   useEffect(() => { updateList()}, []);

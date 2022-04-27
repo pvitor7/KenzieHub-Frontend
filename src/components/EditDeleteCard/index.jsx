@@ -17,7 +17,6 @@ export const EditDeleteCard = ({ setVisibleEditCard, updateList, id }) => {
         updateList();
         setVisibleEditCard(false);
       })
-      .catch((err) => err);
   };
 
   const updateCard = (data) => {
@@ -27,18 +26,17 @@ export const EditDeleteCard = ({ setVisibleEditCard, updateList, id }) => {
           Authorization: `Bearer ${token}`,
         },
       })
-      .then((response) => {
+      .then(() => {
         updateList();
         setVisibleEditCard(false);
       })
-      .catch((err) => err)
   };
 
   return (
     <div className="modal">
       <form id="form-edit-tech" 
       onSubmit={handleSubmit(updateCard)}>
-        <h4>Tecnologia Detalhes</h4>
+        <h4 className="modal-editTech-title">Tecnologia Detalhes</h4>
 
         <div className="field">
           <label>Nome do projeto</label>

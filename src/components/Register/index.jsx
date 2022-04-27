@@ -56,13 +56,10 @@ const Register = () => {
     resolver: yupResolver(schema),
   });
 
-  console.log(errors);
-
   const onSubmit = (data) => {
     axios
       .post("https://kenziehub.herokuapp.com/users", data)
-      .then((response) => console.log(response))
-      .catch((err) => console.log(err));
+      
   };
 
   return (

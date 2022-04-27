@@ -15,10 +15,10 @@ const Login = () => {
       yup.string().required("Email obrigatório!").email("Email inválido!"),
     password: 
       yup.string().required("Senha inválida!")
-    // .matches(
-    //   /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*.&@#])[0-9a-zA-Z$*&@#]{8,}$/,
-    //   "É necessário pelo menos uma letra minúscula, uma letra maiúscula, um número, um caractere especial (!@#$%^&?.) e ter ao menos 8 caracteres!"
-    //   )
+    .matches(
+      /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*.&@#])[0-9a-zA-Z$*&@#]{8,}$/,
+      "É necessário pelo menos uma letra minúscula, uma letra maiúscula, um número, um caractere especial (!@#$%^&?.) e ter ao menos 8 caracteres!"
+      )
     });
 
   const {
@@ -29,7 +29,6 @@ const Login = () => {
     resolver: yupResolver(schema)
   });
   
-  console.log(errors)
         
     const onSubmit = (data) => {
       axios
@@ -46,8 +45,7 @@ const Login = () => {
           JSON.stringify(response.data.token)
         );
         history.push("/list");
-      })
-      .catch((err) => console.log(err));
+      });
     };
     
     const [user, setUser] = useState({});

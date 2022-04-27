@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
 
-    .modal{
+    .modal {
         display: flex;
         position: fixed;
         width: 100vw;
@@ -30,13 +30,15 @@
         border-radius: 3.20867px;
     }
 
-    h4 {
+    .modal-editTech-title {
 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         margin: 0px;
+
+        color: #F8F9FA;
 
         width: 90%;
         height: 40.11px;
@@ -45,7 +47,7 @@
         font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 11.2304px;
+        font-size: 12px;
         /* grey-2 */
 
         background: #343B41;
@@ -60,7 +62,7 @@
 
     label {
 
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 9.772px;
@@ -82,6 +84,8 @@
         flex-direction: row;
         align-items: center;
         height: 35px;
+        width: 100%;
+        padding: 0px 5%;
 
         background: #343B41;
 
@@ -96,6 +100,7 @@
         flex-direction: row;
         align-items: center;
         height: 35px;
+        padding: 0px 5%;
 
         background: #343B41;
 
@@ -130,6 +135,7 @@
         height: 40px;
 
         background: #FF577F;
+        color: #F8F9FA;
         border: 1.2182px solid #FF577F;
         box-sizing: border-box;
         border-radius: 4.06066px;
@@ -152,6 +158,8 @@
         height: 38.37px;
 
         background: #868E96;
+        color: #F8F9FA;
+        ;
         /* grey-1 */
 
         border: 1.2182px solid #868E96;
