@@ -1,0 +1,44 @@
+@media (min-width: 320px) {
+
+    .card-li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2%;
+
+        width: 90%;
+        margin: 5px;
+        /* grey-3 */
+
+        background: rgba(18, 18, 20, 1);
+        border-radius: 4px;
+    }
+
+    .card-tech-name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        background: #121214;
+        border-radius: 4.06066px;
+        margin: 16px 5px;
+        color: #F8F9FA;
+    }
+
+    .card-tech-status {
+
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+
+        /* grey-1 */
+
+        color: #868E96;
+        margin: 16px 5px;
+
+    }
+}

@@ -1,0 +1,135 @@
+@media (min-width: 320px) {
+
+    .modal{
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    #form-register-tech {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 10px;
+
+        position: absolute;
+        width: 95%;
+        max-width: 369px;
+        min-height: 350px;
+        
+
+        background: #212529;
+        box-shadow: 0px 3.20867px 32.0867px -8.02168px rgba(0, 0, 0, 0.25);
+        border-radius: 3.20867px;
+    }
+
+    .modal-registertitle {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+
+        width: 90%;
+        height: 40.11px;
+        padding: 0px 5%;
+
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        /* grey-2 */
+        color: #F8F9FA;
+        background: #343B41;
+        border-radius: 3.20867px 3.20867px 0px 0px;
+    }
+
+    .btn-close-tech {
+
+        background: #343B41;
+        border: none;
+
+        color: #F8F9FA;
+    }
+
+    .label-register-tech {
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        color: #F8F9FA;
+        margin: 10px 0;
+
+    }
+
+    .field-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .name-register-tech {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 35px;
+        width: 100%;
+        padding: 0 5%;
+
+        background: #343B41;
+
+        border: 0.9772px solid #F8F9FA;
+        box-sizing: border-box;
+        border-radius: 3.20867px;
+
+        color: #F8F9FA;
+    }
+
+    .status-register-tech {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 35px;
+        width: 100%;
+        padding: 0 5%;
+
+        background: #343B41;
+
+        border: 0.9772px solid #F8F9FA;
+        box-sizing: border-box;
+        border-radius: 3.20867px;
+
+        color: #F8F9FA;
+    }
+
+    .btn-register-tech {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 22.3336px;
+
+        width: 259.9px;
+        height: 40px;
+
+        background: #FF577F;
+        border: 1.2182px solid #FF577F;
+        box-sizing: border-box;
+        border-radius: 4.06066px;
+        color: #F8F9FA;
+
+        margin: 10px 0px 30px 0px;
+    }
+}
