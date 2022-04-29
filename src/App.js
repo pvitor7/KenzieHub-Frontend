@@ -4,21 +4,23 @@ import Login from './components/Login';
 import Register from './components/Register';
 import { Route, Switch } from 'react-router-dom';
 import MyList from './components/MyList';
+import { useState, useEffect } from 'react';
 
 function App() {
+
   return (
     <div className="App">
          <Switch>
         <Route exact path="/">
-          <Login />
+          <Login/>
         </Route >
 
         <Route exact path="/register">
-          <Register />
+          <Register/>
         </Route >
         
         <Route exact path="/list">
-          <MyList />
+          <MyList/>
         </Route >
       </Switch>
  

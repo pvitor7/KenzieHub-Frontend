@@ -1,13 +1,14 @@
 import "./styles.css";
 import { useForm } from "react-hook-form";
-import { useHistory } from "react-router-dom";
+import { useHistory, Redirect } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 const Login = () => {
-  
+
+
   const history = useHistory();
   
   const schema = yup.object().shape({
@@ -47,8 +48,12 @@ const Login = () => {
         history.push("/list");
       });
     };
-    
+   
     const [user, setUser] = useState({});
+
+    const userToken = JSON.parse(localStorage.getItem("kenzieHubLogin"));
+    if(userToken != null) {return <Redirect to="/list" />}
+
 
   return (
     <div className="loginPage">

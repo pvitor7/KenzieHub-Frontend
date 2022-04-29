@@ -5,17 +5,6 @@ import axios from "axios";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-// import { PageFormsMobile, StyledForm, StyledSection, StyledSelect } from "./style";
-
-const cadastradoAPI = {
-  name: "zezin",
-  email: "zezin@brabo.kz",
-  password: "012345",
-  contact: "zezinBrabin",
-  module: "Quarto módulo (Backend Avançado)",
-  course_module: "Quarto módulo (Backend Avançado)",
-  bio: "eu",
-};
 
 const Register = () => {
   const history = useHistory();

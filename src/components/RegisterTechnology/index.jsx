@@ -26,6 +26,8 @@ export const RegisterTechnology = ({
       });
   };
 
+
+  
   return (
     <div className="modal">
     <form id="form-register-tech" onSubmit={handleSubmit(createTech)}>
