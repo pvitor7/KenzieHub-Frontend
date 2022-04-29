@@ -54,7 +54,6 @@ const Login = () => {
     const userToken = JSON.parse(localStorage.getItem("kenzieHubLogin"));
     if(userToken != null) {return <Redirect to="/list" />}
 
-
   return (
     <div className="loginPage">
       <img src="./../../Logo.svg" />

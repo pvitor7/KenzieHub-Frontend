@@ -4,7 +4,6 @@ import Login from './components/Login';
 import Register from './components/Register';
 import { Route, Switch } from 'react-router-dom';
 import MyList from './components/MyList';
-import { useState, useEffect } from 'react';
 
 function App() {
 

@@ -18,7 +18,6 @@ const MyList = () => {
   const user = JSON.parse(sessionStorage.getItem("kenzieHubUser"));
   const userToken = JSON.parse(localStorage.getItem("kenzieHubLogin"));
 
-  
   const updateList = () => {
     axios
     .get(`https://kenziehub.herokuapp.com/users/${user.id}`)
@@ -28,8 +27,8 @@ const MyList = () => {
     });
   };
   
-  if(userToken != null){ updateList()}
   if(userToken == null) {return <Redirect to="/" />}
+  if(userToken != null){ updateList()}
 
   return (
     <div onClick={updateList}>
